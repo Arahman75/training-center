@@ -1,0 +1,15 @@
+.course{
+    border: 1px solid gray;
+    border-radius: 10px;
+    height: 350px;
+    padding: 10px;
+}
+.course img{
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.course-info{
+    text-align: center;
+}
