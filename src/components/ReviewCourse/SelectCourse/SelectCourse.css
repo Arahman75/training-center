@@ -2,13 +2,13 @@
     display: grid;
     grid-template-columns: 9fr 3fr;
 }
-.courses{
+/* .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
    
     
-}
+} */
 .cart-btn{
     padding: 10px 50px;
     margin-top: 50px;
@@ -21,4 +21,8 @@
 }
 .cart-btn:hover{
    background-color: rgb(241, 76, 6);
+}
+
+.select-course-container{
+    margin: 0 auto;
 }

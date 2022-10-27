@@ -2,8 +2,12 @@
     background-color: goldenrod;
     margin-left: 20px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 23px 20px;
+    height: 350px;
 }
 .cart-container h3{
     text-align: center;
+}
+.cart-container h4, h5{
+    margin-bottom: 15px;
 }

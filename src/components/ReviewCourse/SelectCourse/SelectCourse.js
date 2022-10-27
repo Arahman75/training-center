@@ -1,12 +1,12 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Cart from '../Cart/Cart';
-import Course from '../Course/Course';
-import './Courses.css';
+import Cart from '../../Home/Cart/Cart';
+import ReviewCourse from '../ReviewCourse/ReviewCourse/ReviewCourse';
+import './SelectCourse.css'
 
-const Courses = () => {
+
+
+const SelectCourse = () => {
     const [courses, setCourses] = useState([]);
     const [cart, setCart] =useState([]);
 
@@ -21,32 +21,31 @@ const handleAddToCart = (course)=>{
     setCart(newCart);
     console.log('clicked me', course)
 }
-
     return (
-       <div className='container'>
-        <div> <h3>This is courses {courses.length}</h3></div>
-         <div className='courses-container'>
+       
+
+   
+       <div className='container courses-container'>
+         <div className='select-course-container'>
            
-           <div className="courses">
-           
-           {
-               courses.map(course => <Course 
+          {
+               courses.map(course => <ReviewCourse
                key={course.id}
                course={course}
                handleAddToCart={handleAddToCart}
-               ></Course>)
+               ></ReviewCourse>)
            }
            </div>
            <div className="cart">
 <Cart cart={cart}>
-<Link to="/selectCourse"><button className='cart-btn'>Review Course</button></Link>
+<Link to="/blog"><button className='cart-btn'>Confirm Course</button></Link>
 </Cart>
 
            </div>
            
        </div>
-       </div>
+      
     );
 };
 
-export default Courses;
+export default SelectCourse;

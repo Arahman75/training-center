@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import './Course.css';
 
 const Course = ({course, handleAddToCart}) => {
@@ -10,7 +9,8 @@ const Course = ({course, handleAddToCart}) => {
            <div className='course-info'>
            <h4>{name}</h4>
             <h5>Course Fee : ${price}</h5>
-            <Button onClick={()=>handleAddToCart(course)}>Add Course</Button>
+            <button className='add-btn' onClick={()=>handleAddToCart(course)}>Add Course</button>
+            
            </div>
         </div>
     );
