@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+## Live site link : https://training-center-657d4.web.app
+
+## code link : https://github.com/Arahman75/training-center
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
