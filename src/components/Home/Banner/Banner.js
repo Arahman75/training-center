@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import trainig from '../../../image/courses/ict.jpg';
-import trining1 from '../../../image/courses/basic-computer.jpg';
-import trining2 from '../../../image/courses/managment.png';
+import banner1 from '../../../image/banner1.jpg';
+import banner2 from '../../../image/banner2.jpg';
+import banner3 from '../../../image/banner3.jpg';
 
 const Banner = () => {
    
@@ -17,7 +17,7 @@ const Banner = () => {
       <Carousel.Item>
         <img  style={{height:'600px'}}
           className="d-block w-100"
-          src={trainig}
+          src={banner1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -26,9 +26,9 @@ const Banner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <img style={{height:'600px'}}
           className="d-block w-100"
-          src={trining1}
+          src={banner2}
           alt="Second slide"
         />
 
@@ -38,9 +38,9 @@ const Banner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <img style={{height:'600px'}}
           className="d-block w-100"
-          src={trining2}
+          src={banner3}
           alt="Third slide"
          
         />

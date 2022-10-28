@@ -1,0 +1,17 @@
+.checkout-info{
+    height: 400px;
+    width: 500px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: bisque;
+    /* box-shadow: 2px 1px 8px 14px rgba(234, 233, 232, 0.75);
+-webkit-box-shadow: 2px 1px 8px 14px rgba(225, 192, 218, 0.75);
+-moz-box-shadow: 2px 1px 8px 14px rgba(238, 222, 234, 0.75); */
+}
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -15,7 +15,8 @@
 }
 .add-btn{
     padding: 10px 50px;
-   background-color: rgb(14, 206, 240);
+    background-color: coral;
+   
     border: none;
     border-radius: 60px;
     color: black;
@@ -24,6 +25,6 @@
     
 }
 .add-btn:hover{
-    background-color: brown;
+    background-color: crimson;
   
 }

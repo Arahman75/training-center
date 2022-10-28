@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    color: crimson;
+    
 }
 .courses{
     display: grid;
@@ -29,3 +29,23 @@
 .cart-btn:hover{
    background-color: rgb(241, 76, 6);
 }
+@media  screen and (max-width: 600px) {
+    .courses{
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
+ /* @media  screen and ((min-width: 600px) and( max-width: 1110px)) {
+    .courses{
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+     }
+ } */
+
+
+ @media  screen and (max-width: 600px) {
+    .courses-container{
+         display: grid;
+         grid-template-columns: 1fr;
+     }
+ }

@@ -33,7 +33,7 @@ const SelectCourse = () => {
            </div>
            <div className="cart">
 <Cart cart={cart}>
-<Link to="/blog"><button className='cart-btn'>Confirm Course</button></Link>
+<Link to="/confirm"><button className='cart-btn'>Confirm Course</button></Link>
 </Cart>
 
            </div>
