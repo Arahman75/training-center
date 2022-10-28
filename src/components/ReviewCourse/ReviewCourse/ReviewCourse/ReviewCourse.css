@@ -1,0 +1,33 @@
+.review-container{
+    border: 1px solid gray;
+    margin: 10px 0;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    display: flex;
+}
+.review-course img{
+    width: 100px;
+    height: 100px;
+}
+.review-info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.review-info{
+    margin-left: 20px;
+}
+.delete-container{
+    margin-right: 20px;
+}
+.delete-btn{
+    border-radius: 5px;
+    background-color: rgb(9, 207, 238);
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    color: rgb(244, 98, 98);
+    cursor: pointer;
+}

@@ -16,11 +16,7 @@ const SelectCourse = () => {
         .then(data => setCourses(data))
     },[])
 
-const handleAddToCart = (course)=>{
-    const newCart = [...cart, course];
-    setCart(newCart);
-    console.log('clicked me', course)
-}
+
     return (
        
 
@@ -32,7 +28,6 @@ const handleAddToCart = (course)=>{
                courses.map(course => <ReviewCourse
                key={course.id}
                course={course}
-               handleAddToCart={handleAddToCart}
                ></ReviewCourse>)
            }
            </div>

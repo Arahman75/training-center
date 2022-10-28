@@ -24,7 +24,7 @@ const handleAddToCart = (course)=>{
 
     return (
        <div className='container'>
-        <div> <h3>This is courses {courses.length}</h3></div>
+         <h3 className='course-title'>We Are Provide Courses :  {courses.length}</h3>
          <div className='courses-container'>
            
            <div className="courses">

@@ -1,0 +1,9 @@
+.header a{
+    font-size: 20px;
+    font-weight: 500;
+   text-transform: uppercase;
+   color:white;
+}
+.header a:hover{
+    color: crimson;
+}
