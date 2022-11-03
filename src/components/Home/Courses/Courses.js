@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Course from '../Course/Course';
 import './Courses.css';
@@ -14,12 +15,36 @@ const Courses = () => {
         fetch('courses.json')
         .then(res => res.json())
         .then(data => setCourses(data))
-    },[])
+    },[]);
+// use for local storage
+useEffect(()=>{
+    console.log('add a course', courses)
+    const storedCart = getStoredCart();
+   const savedCart =[];
+    for(const id in storedCart){
+        const addedCourse = courses.find(course => course.id == id);
+        if(addedCourse){
+            const quantity = storedCart[id];
+            addedCourse.quantity = quantity;
+            savedCart.push(addedCourse);
+        console.log(addedCourse);
+           
+        }
+}
+    setCart(savedCart);
+},[courses])
+
 
 const handleAddToCart = (course)=>{
+    // console.log('clicked me', course)
+    // const newCart = [...cart, course];
+    // setCart(newCart);
+
+    // use for local storage
     const newCart = [...cart, course];
     setCart(newCart);
-    console.log('clicked me', course)
+    addToDb(course.id);
+    
 }
 
     return (

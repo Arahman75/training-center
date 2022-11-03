@@ -1,20 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useCart from '../../../hooks/useCart';
+import useCourses from '../../../hooks/useCourses';
 import Cart from '../../Home/Cart/Cart';
+import { removeFromDb } from '../../utilities/fakedb';
 import ReviewCourse from '../ReviewCourse/ReviewCourse/ReviewCourse';
 import './SelectCourse.css'
 
 
 
 const SelectCourse = () => {
-    const [courses, setCourses] = useState([]);
-    const [cart, setCart] =useState([]);
+    // const [courses, setCourses] = useState([]);
+    const [courses, setCourses] = useCourses();
+    // const [cart, setCart] =useState([]);
+    const [cart, setCart] = useCart(courses);
 
-    useEffect(()=>{
-        fetch('courses.json')
-        .then(res => res.json())
-        .then(data => setCourses(data))
-    },[])
+    // useEffect(()=>{
+    //     fetch('courses.json')
+    //     .then(res => res.json())
+    //     .then(data => setCourses(data))
+    // },[])
+
+    const handleRemoveCourse =(course)=>{
+        const rest = cart.filter(pd => pd.id !== course.id);
+        setCart(rest);
+        removeFromDb(course.id);
+// console.log(product);
+    }
 
 
     return (
@@ -28,6 +40,7 @@ const SelectCourse = () => {
                courses.map(course => <ReviewCourse
                key={course.id}
                course={course}
+               handleRemoveCourse={handleRemoveCourse}
                ></ReviewCourse>)
            }
            </div>
