@@ -22,12 +22,12 @@ useEffect(()=>{
     const storedCart = getStoredCart();
    const savedCart =[];
     for(const id in storedCart){
-        const addedCourse = courses.find(course => course.id == id);
+        const addedCourse = courses.find(course => course.id === id);
         if(addedCourse){
             const quantity = storedCart[id];
             addedCourse.quantity = quantity;
             savedCart.push(addedCourse);
-        console.log(addedCourse);
+        // console.log(addedCourse);
            
         }
 }
@@ -35,15 +35,26 @@ useEffect(()=>{
 },[courses])
 
 
-const handleAddToCart = (course)=>{
+const handleAddToCart = (SelectedCourse)=>{
     // console.log('clicked me', course)
     // const newCart = [...cart, course];
     // setCart(newCart);
 
     // use for local storage
-    const newCart = [...cart, course];
+    let newCart = [];
+    const exists = cart.find(course => course.id === SelectedCourse.id)
+    if(!exists){
+        SelectedCourse.quantity = 1;
+        newCart = [...cart, SelectedCourse];
+    }
+    else{
+        const rest = cart.filter(course => course.id !== SelectedCourse.id)
+        exists.quantity = exists.quantity + 1;
+        newCart = [...rest, exists]
+    }
+   
     setCart(newCart);
-    addToDb(course.id);
+    addToDb(SelectedCourse.id);
     
 }
 

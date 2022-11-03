@@ -1,19 +1,21 @@
 [
-    {"id": 1, "name": "English Course", "tax": 50, "price": 500, "img":"https://i.ibb.co/k3ZtfwY/english.jpg",  "quantity": 0},
+    {"id": "1", "name": "English Course", "tax": "50", "price": "500", "img":"https://i.ibb.co/k3ZtfwY/english.jpg",  "quantity":"0"},
 
-    {"id": 2, "name": "Math Course", "tax": 50, "price": 600, "img":"https://i.ibb.co/fpCwFny/math.jpg",  "quantity": 0},
-    {"id": 3, "name": "ICT Course", "tax": 50, "price": 700, "img":"https://i.ibb.co/jD41GyR/ict.jpg"},
+    {"id": "2", "name": "Math Course", "tax":"50", "price":"600", "img":"https://i.ibb.co/fpCwFny/math.jpg",  "quantity":"0"},
 
-    {"id": 4, "name": "Computer Course", "tax": 50, "price": 1200, "img":"https://i.ibb.co/9tTD4d0/basic-computer.jpg",  "quantity": 0},
+    {"id": "3", "name": "ICT Course", "tax": "50", "price": "700", "img":"https://i.ibb.co/jD41GyR/ict.jpg", "quantity":"0"},
 
-    {"id": 5, "name": "Health Care Course", "tax": 50, "price": 900, "img":"https://i.ibb.co/m57LXGN/health.png",  "quantity": 0},
+    {"id": "4", "name": "Computer Course", "tax": "50", "price": "1200", "img":"https://i.ibb.co/9tTD4d0/basic-computer.jpg",  "quantity": "0"},
 
-    {"id": 6, "name": "Accounting Course", "tax": 50, "price": 1000, "img":"https://i.ibb.co/Wtng6JY/accounting.webp", "quantity": 0},
+    {"id":" 5", "name": "Health Care Course", "tax": "50", "price": "900", "img":"https://i.ibb.co/m57LXGN/health.png",  "quantity": "0"},
 
-    {"id": 7, "name": "Management Course", "tax": 50, "price": 1100, "img":"https://i.ibb.co/NVdzV0W/managment.png", "quantity": 0},
+    {"id": "6", "name": "Accounting Course", "tax": "50", "price": "1000", "img":"https://i.ibb.co/Wtng6JY/accounting.webp", "quantity": "0"},
+
+    {"id": "7", "name": "Management Course", "tax": "50", "price": "1100", "img":"https://i.ibb.co/NVdzV0W/managment.png", "quantity": "0"},
     
-    {"id": 8, "name": "Chemistry Course", "tax": 50, "price": 800, "img":"https://i.ibb.co/n1M4JqK/chemistry.jpg", "quantity": 0},
-    {"id": 9, "name": "Special English Course", "tax": 50, "price": 800, "img":"https://i.ibb.co/zm6fXtz/special-english.png", "quantity": 0}
+    {"id": "8", "name": "Chemistry Course", "tax": "50", "price": "800", "img":"https://i.ibb.co/n1M4JqK/chemistry.jpg", "quantity": "0"},
+
+    {"id": "9", "name": "Special English Course", "tax": "50", "price": "800", "img":"https://i.ibb.co/zm6fXtz/special-english.png", "quantity": "0"}
    
    
 ]
