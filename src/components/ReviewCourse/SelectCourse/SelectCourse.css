@@ -9,7 +9,7 @@
    
     
 } */
-.cart-btn{
+.review-btn{
     padding: 10px 50px;
     margin-top: 50px;
     border: none;
@@ -19,9 +19,9 @@
     font-size: 16px;
     background-color: brown;
 }
-.cart-btn:hover{
+/* .cart-btn:hover{
    background-color: rgb(241, 76, 6);
-}
+} */
 
 .select-course-container{
     margin: 0 auto;

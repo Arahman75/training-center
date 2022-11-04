@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 
-const useCourses =()=>{
+const useCourses = () => {
     const [courses, setCourses] = useState([]);
-    
 
-    useEffect(()=>{
+
+    useEffect(() => {
         fetch('courses.json')
-        .then(res => res.json())
-        .then(data => setCourses(data))
-    },[]);
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, []);
     return [courses,
-    setCourses
+        setCourses
     ]
 }
 export default useCourses;

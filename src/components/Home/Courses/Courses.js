@@ -60,7 +60,7 @@ const handleAddToCart = (SelectedCourse)=>{
 
     return (
        <div className='container'>
-         <h3 className='course-title'>We Are Provide Courses :  {courses.length}</h3>
+         <h3 className='course-title'>We Are Providing Courses</h3>
          <div className='courses-container'>
            
            <div className="courses">
@@ -75,7 +75,7 @@ const handleAddToCart = (SelectedCourse)=>{
            </div>
            <div className="cart">
 <Cart cart={cart}>
-<Link to="/selectCourse"><button className='cart-btn'>Review Course</button></Link>
+<Link to="/selectCourse"><button className='review-btn'>Review Course</button></Link>
 </Cart>
 
            </div>

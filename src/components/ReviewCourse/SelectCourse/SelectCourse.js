@@ -37,7 +37,7 @@ const SelectCourse = () => {
          <div className='select-course-container'>
            
           {
-               courses.map(course => <ReviewCourse
+               cart.map(course => <ReviewCourse
                key={course.id}
                course={course}
                handleRemoveCourse={handleRemoveCourse}
@@ -46,7 +46,7 @@ const SelectCourse = () => {
            </div>
            <div className="cart">
 <Cart cart={cart}>
-<Link to="/confirm"><button className='cart-btn'>Confirm Course</button></Link>
+<Link to="/confirm"><button className='review-btn'>Confirm Course</button></Link>
 </Cart>
 
            </div>
